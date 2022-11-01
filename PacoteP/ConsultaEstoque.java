@@ -33,7 +33,7 @@ Gabriel Murça - RGM: 29818737
 Kayky Hyan Nunes - RGM: 29610800
 Kayky Andrade - RGM: 
 Matheus Freitas - RGM: 5529042577
-Rodrigo - RGM: 
+Rodrigo - RGM: 5929072123
 
 Análise e Desenvolvimento de Sistemas - ADS
 Campus Paulista - Turma 2ºH

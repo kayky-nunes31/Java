@@ -12,18 +12,45 @@ inicio
     escreva("\nDigite quantos produtos tem no estoque: ");
     leia(qtd_prod);
 	
-	para(i = 1; i < qtd_prod; i++) {
+	loja1.setNome(nomeLoja);
+    loja1.setVendedor(nomeGerente);
+	
+	para(i = 0; i < qtd_prod; i++) {
         escreva("\nDigite o nome do produto " + i + ": ");
         leia(produtos[i]);
             
     }
-    para(i = 1; i < qtd_prod; i++) {
+    para(i = 0; i < qtd_prod; i++) {
         escreva("\nDigite a quantidade de estoque do(a) " + produtos[i] + ": ");
         leia(qtd_estoque[i]);
     }
-    para(i = 1; i < qtd_prod; i++) {
+	
+	escreva("Nome da loja: " + loja1.getNome());
+    escreva("Nome do(a) gerente: " + loja1.getVendedor());
+	
+    para(i = 0; i < qtd_prod; i++) {
         escreva("O nome do produto: " + produtos[i] +
                            "\nTem a quantidade em estoque: " + qtd_estoque[i] + 
                            "\n");
+    }
+fim
+
+void ConsultaEstoque(literal nome, literal vendedor)
+inicio
+	this.nome = nome;
+    this.vendedor = vendedor;
+
+	literal getNome(){
+        return nome;
+    }
+	void setNome(literal novoNome){
+        this.nome = novoNome;
+    }
+	
+	literal getVendedor(){
+        return vendedor;
+    }
+	void setVendedor(literal novoVendedor){
+        this.vendedor = novoVendedor;
     }
 fim
