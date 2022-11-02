@@ -44,21 +44,28 @@ public class MyClass {
                                     "\nTem a quantidade em estoque: " + qtd_estoque[i] + 
                                     "\n");
         }
-/*
-        System.out.println("Deseja comprar algum produto? ");
-        String resp = myObj.nextLine();
-        if(resp == "S" || resp == "s"){
-            System.out.println("Qual produto deseja comprar? ");
-            String resp1 = myObj.nextLine();
-            if(resp1 == produtos[qtd_prod]){
+
+            while(true){
+            //System.out.println("Deseja comprar algum produto digite S/N: ");
+            //String resp = myObj.nextLine();
+
+            //if(resp == "S" || resp == "s"){
+                System.out.println("Digite o número do produto: ");
+                int x = myObj.nextInt();
+
                 System.out.println("Quantas unidades deseja comprar? ");
                 int unidades = myObj.nextInt();
 
-                double conta = qtd_estoque[qtd_prod] - unidades;
+                double conta = qtd_estoque[x] - unidades;
 
-                System.out.println("A quantidade de " + produtos[qtd_prod] + " é de: " + conta);
+                System.out.println("A quantidade de " + produtos[x] + " é de: " + conta);
+
             }
-        } */
+            /*
+            else{
+            System.out.println("Fim");;
+            }
+            */    
     }
 }
 
